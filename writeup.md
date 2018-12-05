@@ -47,7 +47,7 @@ Below are steps to demonstrate this -
 3. Applied distortion correction to obtain the result.
 
 I will describe how I apply the distortion correction to one of the test images like this one:
-![distortion-corrected](https://github.com/jay-thakur/Advanced-Lane-Finding/blob/master/output_images/camera_calibration.JPG)
+![distortion-corrected](https://github.com/jay-thakur/Advanced-Lane-Finding/blob/master/output_images/undistorted_image.JPG)
 
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
