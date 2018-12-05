@@ -54,7 +54,7 @@ I will describe how I apply the distortion correction to one of the test images 
 
 This is header *2. Image Thresholding*. I used a combination of color and gradient thresholds to generate a binary image. Here's an example of my output for this step.
 
-![Thresholded binary](https://github.com/jay-thakur/Advanced-Lane-Finding/tree/master/output_images/binary_threshold.png)
+![Thresholded binary](https://github.com/jay-thakur/Advanced-Lane-Finding/blob/master/output_images/binary_threshold.png)
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
@@ -72,13 +72,13 @@ dst = np.float32([[offset, 0], [img_size[0] - offset, 0], [img_size[0] - offset,
 
 I verified that my perspective transform was working as expected by drawing the `src` and `dst` points onto a test image and its warped counterpart to verify that the lines appear parallel in the warped image.
 
-![Perspective Transform](https://github.com/jay-thakur/Advanced-Lane-Finding/tree/master/output_images/bird_eye_view.png)
+![Perspective Transform](https://github.com/jay-thakur/Advanced-Lane-Finding/blob/master/output_images/bird_eye_view.png)
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
 In header *4. Lane Detection & Fit with Polynomial* I fit my lane lines with a 2nd order polynomial with `find_lane_pixels() & fit_polynomial()`. The output looks like this -
 
-![Identified lane Pixels](https://github.com/jay-thakur/Advanced-Lane-Finding/tree/master/output_images/poly_fit.png)
+![Identified lane Pixels](https://github.com/jay-thakur/Advanced-Lane-Finding/blob/master/output_images/poly_fit.png)
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
@@ -88,7 +88,7 @@ I did this in header *5. Radius of Curvature*
 
 I implemented this step in header *6. Plotting Identified Lanes* in the function `plot_identified_lanes()`.  Here is an example of my result on a test image:
 
-![alt text](https://github.com/jay-thakur/Advanced-Lane-Finding/tree/master/output_images/plotted_lane.png)
+![alt text](https://github.com/jay-thakur/Advanced-Lane-Finding/blob/master/output_images/plotted_lane.png)
 
 ---
 
