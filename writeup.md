@@ -16,16 +16,6 @@ The goals / steps of this project are the following:
 * Warp the detected lane boundaries back onto the original image.
 * Output visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position.
 
-[//]: # (Image References)
-
-[image1]: ./examples/undistort_output.png "Undistorted"
-[image2]: ./test_images/test1.jpg "Road Transformed"
-[image3]: ./examples/binary_combo_example.jpg "Binary Example"
-[image4]: ./examples/warped_straight_lines.jpg "Warp Example"
-[image5]: ./examples/color_fit_lines.jpg "Fit Visual"
-[image6]: ./examples/example_output.jpg "Output"
-[video1]: ./project_video.mp4 "Video"
-
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 
 ### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
@@ -45,19 +35,19 @@ I start by preparing "object points", which will be the (x, y, z) coordinates of
 
 I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result: 
 
-![Camera Calibration](https://github.com/jay-thakur/Advanced-Lane-Finding/tree/master/output_images/camera_calibration.jpg)
+![Camera Calibration](https://github.com/jay-thakur/Advanced-Lane-Finding/blob/master/output_images/camera_calibration.JPG)
 
 ### Pipeline (single images)
 
 #### 1. Provide an example of a distortion-corrected image.
 
 Below are steps to demonstrate this - 
-1. Prepared objepoints & imgpoints
+1. Prepared objpoints & imgpoints
 2. Computed camera calibration and distortion coefficients on object points and image points.
 3. Applied distortion correction to obtain the result.
 
 I will describe how I apply the distortion correction to one of the test images like this one:
-![alt text](https://github.com/jay-thakur/Advanced-Lane-Finding/tree/master/output_images/camera_calibration.jpg)
+![distortion-corrected](https://github.com/jay-thakur/Advanced-Lane-Finding/blob/master/output_images/camera_calibration.JPG)
 
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
@@ -106,7 +96,7 @@ I implemented this step in header *6. Plotting Identified Lanes* in the function
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
-Here's a [link to my video result](https://github.com/jay-thakur/Advanced-Lane-Finding/project_output_video.mp4)
+Here's a [link to my video result](https://github.com/jay-thakur/Advanced-Lane-Finding/blob/master/project_video_output.mp4)
 
 ---
 
